@@ -1,0 +1,17 @@
+.form {
+  margin: 2rem 0;
+  text-align: right;
+}
+
+.form-label {
+  color: #a3a3a3;
+  font-size: 2rem;
+  font-family: "Teko", sans-serif;
+}
+
+.form-select {
+  border-bottom: 1px solid black;
+  font-size: 2rem;
+  font-family: "Teko", sans-serif;
+  font-weight: 600;
+}
