@@ -1,6 +1,7 @@
 import React from "react";
 import logo from "./../../images/dept_logo.svg";
-import hero from "./../../images/hero_image.png";
+
+import "./Header.css";
 
 const Header = () => {
   return (
@@ -13,8 +14,6 @@ const Header = () => {
         </button>
       </div>
       <h1 className="header-title">Work</h1>
-      <img src={hero} alt="Background header" className="header-hero" />
-      <button className="header-btn">view case</button>
     </header>
   );
 };
