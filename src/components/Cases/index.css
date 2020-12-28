@@ -1,3 +1,7 @@
+.cases {
+  padding: 0 1.25rem 1.25rem;
+}
+
 .case {
   display: flex;
   flex-direction: column;

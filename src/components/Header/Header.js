@@ -1,24 +1,17 @@
 import React from "react";
-import logo from "./../../images/dept_logo.svg";
+import { Burger, Menu, CTA } from "./../../components";
 
-import "./Header.css";
+import "./index.css";
 
 const Header = () => {
   return (
     <header className="header">
-      <div className="menu">
-        <img className="menu-logo" src={logo} alt="Logo DEPT black" />
-        <button className="menu-btn">
-          <span className="menu-btn--line"></span>
-          <span className="menu-btn--line"></span>
-        </button>
-      </div>
-      <div className="header-title">
+      <Burger />
+      <Menu />
+      <section className="header-title">
         <h1>Work</h1>
-      </div>
-      <div className="header-cta">
-        <button>view case</button>
-      </div>
+      </section>
+      <CTA />
     </header>
   );
 };

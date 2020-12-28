@@ -1,3 +1,8 @@
+.clients {
+  background-color: #f3f6f6;
+  padding: 2rem 1.25rem;
+}
+
 .clients-title {
   margin-bottom: 0.5rem;
   font-weight: 300;

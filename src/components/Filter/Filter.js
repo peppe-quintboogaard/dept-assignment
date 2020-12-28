@@ -1,8 +1,8 @@
 import React from "react";
 
-import "./Form.css";
+import "./index.css";
 
-const Form = () => {
+const Filter = () => {
   return (
     <form className="cases-filter form">
       <label htmlFor="" className="form-label" id="filter">
@@ -17,4 +17,4 @@ const Form = () => {
   );
 };
 
-export default Form;
+export default Filter;

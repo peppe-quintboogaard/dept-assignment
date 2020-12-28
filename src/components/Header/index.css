@@ -1,0 +1,22 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  position: relative;
+}
+
+.header-title {
+  padding: 1rem 1.25rem;
+  background-image: url("./../../images/hero_image.png");
+  background-position: right;
+  background-size: cover;
+}
+
+.header-title h1 {
+  margin: auto 0;
+  padding-top: 5rem;
+  font-family: "Teko", sans-serif;
+  font-weight: 400;
+  font-size: 10rem;
+  text-transform: uppercase;
+}

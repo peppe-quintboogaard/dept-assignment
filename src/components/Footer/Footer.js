@@ -1,6 +1,6 @@
 import React from "react";
 
-import "./Footer.css";
+import "./index.css";
 import DeptLogoWhite from "./../../images/dept_logo_white.svg";
 import FacebookIcon from "./../../images/icon-facebook.svg";
 import TwitterIcon from "./../../images/icon-twitter.svg";
