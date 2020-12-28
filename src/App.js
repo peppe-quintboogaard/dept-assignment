@@ -3,7 +3,7 @@ import { Cases, Clients, Footer, Header } from "./components";
 const App = () => (
   <>
     <Header />
-    <main classNam="container">
+    <main className="container">
       <Cases />
       <Clients />
     </main>
