@@ -7,6 +7,7 @@ const CaseList = () => {
     <div className="case-list">
       {/* map function to render all different cases from Case.js */}
       <Case />
+      <Case />
     </div>
   );
 };

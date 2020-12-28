@@ -1,0 +1,24 @@
+.case {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 3.5rem;
+}
+
+.case-img {
+  width: 100%;
+  height: 100%;
+}
+
+.case-title {
+  margin: 1.5rem 0 1rem;
+  color: #939393;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.case-caption {
+  font-weight: 300;
+  font-size: 2.5rem;
+  line-height: 1.1;
+}
