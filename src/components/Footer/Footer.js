@@ -12,34 +12,40 @@ const Footer = () => {
       <img src={DeptLogoWhite} alt="Logo DEPT white" className="footer-logo" />
       <ul className="footer-links">
         <li className="link-item">
-          <a href="">Work</a>
+          <a href="#">Work</a>
         </li>
         <li className="link-item">
-          <a href="">Services</a>
+          <a href="#">Services</a>
         </li>
         <li className="link-item">
-          <a href="">Stories</a>
+          <a href="#">Stories</a>
         </li>
         <li className="link-item">
-          <a href="">About</a>
+          <a href="#">About</a>
         </li>
         <li className="link-item">
-          <a href="">Careers</a>
+          <a href="#">Careers</a>
         </li>
         <li className="link-item">
-          <a href="">Contact</a>
+          <a href="#">Contact</a>
         </li>
       </ul>
       <ul className="footer-media">
-        <li className="media-item">
-          <img src={FacebookIcon} alt="icon Facebook" />
-        </li>
-        <li className="media-item">
-          <img src={TwitterIcon} alt="icon Twitter" />
-        </li>
-        <li className="media-item">
-          <img src={InstagramIcon} alt="icon Instragram" />
-        </li>
+        <a href="https://www.facebook.com/DeptAgency/">
+          <li className="media-item">
+            <img src={FacebookIcon} alt="icon Facebook" />
+          </li>
+        </a>
+        <a href="https://twitter.com/deptagency">
+          <li className="media-item">
+            <img src={TwitterIcon} alt="icon Twitter" />
+          </li>
+        </a>
+        <a href="https://www.instagram.com/deptagency/">
+          <li className="media-item">
+            <img src={InstagramIcon} alt="icon Instragram" />
+          </li>
+        </a>
       </ul>
       <div className="footer-divider"></div>
       <p className="footer-text">Chamber of Commerce: 63464101</p>
