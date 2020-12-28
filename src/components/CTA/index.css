@@ -1,0 +1,12 @@
+.header-cta {
+  padding: 1rem 1.25rem 0rem;
+}
+
+.header-cta button {
+  width: 100%;
+  padding: 1rem 1rem;
+  color: white;
+  background-color: black;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
