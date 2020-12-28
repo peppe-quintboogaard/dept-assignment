@@ -13,7 +13,12 @@ const Header = () => {
           <span className="menu-btn--line"></span>
         </button>
       </div>
-      <h1 className="header-title">Work</h1>
+      <div className="header-title">
+        <h1>Work</h1>
+      </div>
+      <div className="header-cta">
+        <button>view case</button>
+      </div>
     </header>
   );
 };

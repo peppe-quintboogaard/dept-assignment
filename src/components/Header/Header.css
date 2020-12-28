@@ -1,20 +1,17 @@
 .header {
   display: flex;
   flex-direction: column;
-  height: 25rem;
+  height: auto;
   position: relative;
-  padding: 1rem 1.25rem;
-  background-image: url("./../../images/hero_image.png");
-  background-position: right;
-  background-size: cover;
 }
 
 .menu {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  position: sticky;
+  position: absolute;
   width: 100%;
+  padding: 1rem 1.25rem;
   z-index: 2;
 }
 
@@ -39,24 +36,30 @@
 }
 
 .header-title {
+  padding: 1rem 1.25rem;
+  background-image: url("./../../images/hero_image.png");
+  background-position: right;
+  background-size: cover;
+}
+
+.header-title h1 {
   margin: auto 0;
-  padding-top: 4rem;
+  padding-top: 5rem;
   font-family: "Teko", sans-serif;
   font-weight: 400;
   font-size: 10rem;
   text-transform: uppercase;
 }
 
-.menu,
-.header-title,
-.header-btn {
-  z-index: 1;
+.header-cta {
+  padding: 1rem 1.25rem 0rem;
 }
 
-.header-hero {
+.header-cta button {
   width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 0;
+  padding: 1rem 1rem;
+  color: white;
+  background-color: black;
+  font-size: 0.9rem;
+  text-transform: uppercase;
 }
