@@ -1,18 +1,12 @@
 import React from "react";
+import { StyledBurger } from "./Burger.styled";
 
-import Logo from "./../../images/dept_logo.svg";
-
-import "./index.css";
-
-const Burger = () => {
+const Burger = ({ open, setOpen }) => {
   return (
-    <section className="header-menu">
-      <img className="header-logo" src={Logo} alt="Logo DEPT black" />
-      <button className="header-btn">
-        <span className="header-btn--line"></span>
-        <span className="header-btn--line"></span>
-      </button>
-    </section>
+    <StyledBurger open={open} onClick={() => setOpen(!open)}>
+      <span></span>
+      <span></span>
+    </StyledBurger>
   );
 };
 
