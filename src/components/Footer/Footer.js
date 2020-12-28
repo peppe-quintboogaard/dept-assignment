@@ -1,11 +1,47 @@
 import React from "react";
 
+import "./Footer.css";
+import DeptLogoWhite from "./../../images/dept_logo_white.svg";
+import FacebookIcon from "./../../images/icon-facebook.svg";
+import TwitterIcon from "./../../images/icon-twitter.svg";
+import InstagramIcon from "./../../images/icon-instagram.svg";
+
 const Footer = () => {
   return (
     <footer className="footer">
-      {/* <img src="" alt="Logo DEPT white" className="footer-logo"/> */}
-      <ul className="footer-links">{/* render dynamically? */}</ul>
-      <ul className="footer-media">{/* render dynamically? */}</ul>
+      <img src={DeptLogoWhite} alt="Logo DEPT white" className="footer-logo" />
+      <ul className="footer-links">
+        <li className="link-item">
+          <a href="">Work</a>
+        </li>
+        <li className="link-item">
+          <a href="">Services</a>
+        </li>
+        <li className="link-item">
+          <a href="">Stories</a>
+        </li>
+        <li className="link-item">
+          <a href="">About</a>
+        </li>
+        <li className="link-item">
+          <a href="">Careers</a>
+        </li>
+        <li className="link-item">
+          <a href="">Contact</a>
+        </li>
+      </ul>
+      <ul className="footer-media">
+        <li className="media-item">
+          <img src={FacebookIcon} alt="icon Facebook" />
+        </li>
+        <li className="media-item">
+          <img src={TwitterIcon} alt="icon Twitter" />
+        </li>
+        <li className="media-item">
+          <img src={InstagramIcon} alt="icon Instragram" />
+        </li>
+      </ul>
+      <div className="footer-divider"></div>
       <p className="footer-text">Chamber of Commerce: 63464101</p>
       <p className="footer-text">VAT: NL 8552.47.502.B01</p>
       <p className="footer-text">Terms and conditions</p>
