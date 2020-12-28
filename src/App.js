@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from "./components/Header/HeaderSection";
+import Form from "./components/Form/Form";
+import CaseList from "./components/CaseList/CaseList";
+import ClientList from "./components/ClientList/ClientList";
+import Footer from "./components/Footer/Footer";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
+import "./App.css";
+
+const App = () => (
+  <div className="App">
+    <Header />
+    <main className="container">
+      <section className="cases">
+        <Form />
+        <CaseList />
+      </section>
+      <section className="clients">
+        <h1 className="setion-title">Clients</h1>
+        <p className="section-paragraph">
+          We value a great working relationship with our clients above all else. It’s why they often come to our parties. It’s also why we’re able to challenge and inspire them to reach for the stars.
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+        <ClientList />
+      </section>
+    </main>
+    <Footer />
+  </div>
+);
 
 export default App;
