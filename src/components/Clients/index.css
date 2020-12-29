@@ -33,6 +33,10 @@
   height: 5rem;
 }
 
+.client:nth-child(n + 7) {
+  display: none;
+}
+
 .client-img {
   /* height: 3rem; */
   max-width: 5rem;

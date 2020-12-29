@@ -16,8 +16,7 @@ const App = () => {
       <Header />
       <main className="container">
         {data && <Cases data={data} />}
-
-        <Clients />
+        {data && <Clients data={data} />}
       </main>
       <Footer />
     </>

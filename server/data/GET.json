@@ -1,6 +1,6 @@
 {
   "cases": [
-    { "id": 1, "company": "bol.com", "caption": "a summer island in the netherlands", "img": "./../../images/bolcom.png" },
+    { "id": 1, "company": "bol.com", "caption": "a summer island in the Netherlands", "img": "./../../images/bolcom.png" },
     { "id": 2, "company": "kempen", "caption": "not some average banking website", "img": "./../../images/kempen.png" },
     { "id": 3, "company": "philips", "caption": "beautiful design meets innovative technology", "img": "./../../images/philips.png" },
     { "id": 4, "company": "gemeentemuseum", "caption": "a 100 years of Mondriaan & De Stijl", "img": "./../../images/gemeentemuseum.png" },
@@ -10,5 +10,23 @@
     { "id": 8, "company": "jbl", "caption": "live like a champion with Jerome Boateng", "img": "./../../images/jbl.png" },
     { "id": 9, "company": "zalando", "caption": "innovative SEO and content strategy for Zalando", "img": "./../../images/zalando.png" },
     { "id": 10, "company": "koninklijke bibliotheek", "caption": "the search for the most influential book ever", "img": "./../../images/koninklijke-bibliotheek.png" }
+  ],
+  "clients": [
+    { "id": 1, "company": "Nivea", "img": "./../../images/Nivea_logo_zwart.png" },
+    { "id": 2, "company": "Mona", "img": "./../../images/Mona_logo_zwart.png" },
+    { "id": 3, "company": "Transavia", "img": "./../../images/Transavia_logo_zwart.png" },
+    { "id": 4, "company": "Zalando", "img": "./../../images/Zalando_logo_zwart.png" },
+    { "id": 5, "company": "TomTom", "img": "./../../images/Tomtom_logo_zwart.png" },
+    { "id": 6, "company": "Unilever", "img": "./../../images/Unilever_logo_zwart.png" },
+    { "id": 7, "company": "Adidas", "img": "./../../images/Adidas_logo_zwart.png" },
+    { "id": 8, "company": "Pathe", "img": "./../../images/Pathe_logo_zwart.png" },
+    { "id": 9, "company": "ABN Amro", "img": "./../../images/ABN_logo_zwart.png" },
+    { "id": 10, "company": "Triumph", "img": "./../../images/Triumph_logo_zwart.png" },
+    { "id": 11, "company": "Microsoft", "img": "./../../images/Microsoft_logo_zwart.png" },
+    { "id": 12, "company": "Oxxio", "img": "./../../images/Oxxio_logo_zwart.png" },
+    { "id": 13, "company": "Nationale Nederlanden", "img": "./../../images/NN_logo_zwart.png" },
+    { "id": 14, "company": "Ziggo", "img": "./../../images/Ziggo_logo_zwart.png" },
+    { "id": 15, "company": "Walibi", "img": "./../../images/Walibi_logo_zwart.png" },
+    { "id": 16, "company": "KLM", "img": "./../../images/KLM_logo_zwart.png" }
   ]
 }

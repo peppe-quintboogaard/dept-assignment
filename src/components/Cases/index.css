@@ -23,6 +23,10 @@
 
 .case-caption {
   font-weight: 300;
-  font-size: 2.5rem;
+  font-size: 2.25rem;
   line-height: 1.1;
+}
+
+.case-caption::first-letter {
+  text-transform: uppercase;
 }
