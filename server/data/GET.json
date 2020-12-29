@@ -1,0 +1,14 @@
+{
+  "cases": [
+    { "id": 1, "company": "bol.com", "caption": "a summer island in the netherlands", "img": "./../../images/bolcom.png" },
+    { "id": 2, "company": "kempen", "caption": "not some average banking website", "img": "./../../images/kempen.png" },
+    { "id": 3, "company": "philips", "caption": "beautiful design meets innovative technology", "img": "./../../images/philips.png" },
+    { "id": 4, "company": "gemeentemuseum", "caption": "a 100 years of Mondriaan & De Stijl", "img": "./../../images/gemeentemuseum.png" },
+    { "id": 5, "company": "be lighting", "caption": "delivering clarity on a global scale", "img": "./../../images/lightning.png" },
+    { "id": 6, "company": "tui", "caption": "swipe to find your next holiday destination", "img": "./../../images/tui.png" },
+    { "id": 7, "company": "chocomel", "caption": "a campaign for the limited edition letter packs", "img": "./../../images/chocomel.png" },
+    { "id": 8, "company": "jbl", "caption": "live like a champion with Jerome Boateng", "img": "./../../images/jbl.png" },
+    { "id": 9, "company": "zalando", "caption": "innovative SEO and content strategy for Zalando", "img": "./../../images/zalando.png" },
+    { "id": 10, "company": "koninklijke bibliotheek", "caption": "the search for the most influential book ever", "img": "./../../images/koninklijkebibliotheek.png" }
+  ]
+}
