@@ -8,31 +8,31 @@ const Menu = ({ open }) => {
     <StyledMenu open={open}>
       <ul>
         <li>
-          <a>Home</a>
+          <p>Home</p>
         </li>
         <li>
-          <a>Werk</a>
+          <p>Werk</p>
         </li>
         <li>
-          <a>Over</a>
+          <p>Over</p>
         </li>
         <li>
-          <a>Diensten</a>
+          <p>Diensten</p>
         </li>
         <li>
-          <a>Partners</a>
+          <p>Partners</p>
         </li>
         <li>
-          <a>Stories</a>
+          <p>Stories</p>
         </li>
         <li>
-          <a>Vacatures</a>
+          <p>Vacatures</p>
         </li>
         <li>
-          <a>Events</a>
+          <p>Events</p>
         </li>
         <li>
-          <a>Contact</a>
+          <p>Contact</p>
         </li>
       </ul>
     </StyledMenu>

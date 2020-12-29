@@ -12,22 +12,22 @@ const Footer = () => {
       <img src={DeptLogoWhite} alt="Logo DEPT white" className="footer-logo" />
       <ul className="footer-links">
         <li className="link-item">
-          <a href="#">Work</a>
+          <p>Work</p>
         </li>
         <li className="link-item">
-          <a href="#">Services</a>
+          <p>Services</p>
         </li>
         <li className="link-item">
-          <a href="#">Stories</a>
+          <p>Stories</p>
         </li>
         <li className="link-item">
-          <a href="#">About</a>
+          <p>About</p>
         </li>
         <li className="link-item">
-          <a href="#">Careers</a>
+          <p>Careers</p>
         </li>
         <li className="link-item">
-          <a href="#">Contact</a>
+          <p>Contact</p>
         </li>
       </ul>
       <ul className="footer-media">
