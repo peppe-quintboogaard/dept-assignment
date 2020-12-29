@@ -9,6 +9,6 @@
     { "id": 7, "company": "chocomel", "caption": "a campaign for the limited edition letter packs", "img": "./../../images/chocomel.png" },
     { "id": 8, "company": "jbl", "caption": "live like a champion with Jerome Boateng", "img": "./../../images/jbl.png" },
     { "id": 9, "company": "zalando", "caption": "innovative SEO and content strategy for Zalando", "img": "./../../images/zalando.png" },
-    { "id": 10, "company": "koninklijke bibliotheek", "caption": "the search for the most influential book ever", "img": "./../../images/koninklijkebibliotheek.png" }
+    { "id": 10, "company": "koninklijke bibliotheek", "caption": "the search for the most influential book ever", "img": "./../../images/koninklijke-bibliotheek.png" }
   ]
 }
