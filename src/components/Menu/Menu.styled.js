@@ -9,6 +9,7 @@ export const StyledMenu = styled.nav`
   left: 0;
   background: black;
   transition: all 0.25s linear;
+  pointer-events: ${({ open }) => (open ? "auto" : "none")};
   opacity: ${({ open }) => (open ? "1" : "0")};
   ul {
     display: flex;
