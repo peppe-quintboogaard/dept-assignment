@@ -5,4 +5,5 @@ export { default as CTA } from "./CTA";
 export { default as Form } from "./Filter";
 export { default as Footer } from "./Footer";
 export { default as Header } from "./Header";
+export { default as Logo } from "./Logo";
 export { default as Menu } from "./Menu";

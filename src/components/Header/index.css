@@ -15,10 +15,6 @@
   z-index: 2;
 }
 
-.header-logo {
-  width: 3rem;
-}
-
 .header-title {
   padding: 1rem 1.25rem;
   background-image: url("./../../images/hero_image.png");
