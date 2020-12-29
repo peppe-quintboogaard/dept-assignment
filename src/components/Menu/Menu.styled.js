@@ -27,9 +27,6 @@ export const StyledMenu = styled.nav`
       width: 100%;
       position: relative;
       margin-top: 0.5rem;
-      color: white;
-      font-family: "Teko", sans-serif;
-      font-size: 2.5rem;
       text-align: right;
       text-transform: uppercase;
       line-height: 0.8;
@@ -38,8 +35,11 @@ export const StyledMenu = styled.nav`
         opacity: 1;
         transition: all 0.25s linear;
       }
-      a {
+      p {
         display: inline-flex;
+        color: white;
+        font-family: "Teko", sans-serif;
+        font-size: 2.5rem;
         align-items: center;
         &::after {
           content: "";
