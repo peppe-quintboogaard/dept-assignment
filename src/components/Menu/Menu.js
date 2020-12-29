@@ -4,33 +4,33 @@ import { StyledMenu } from "./Menu.styled";
 const Menu = ({ open }) => {
   return (
     <StyledMenu open={open}>
-      <ul className="nav-list">
-        <li className="nav-item">
-          <a href="/">Home</a>
+      <ul>
+        <li>
+          <a>Home</a>
         </li>
-        <li className="nav-item">
-          <a href="/">Werk</a>
+        <li>
+          <a>Werk</a>
         </li>
-        <li className="nav-item">
-          <a href="/">Over</a>
+        <li>
+          <a>Over</a>
         </li>
-        <li className="nav-item">
-          <a href="/">Diensten</a>
+        <li>
+          <a>Diensten</a>
         </li>
-        <li className="nav-item">
-          <a href="/">Partners</a>
+        <li>
+          <a>Partners</a>
         </li>
-        <li className="nav-item">
-          <a href="/">Stories</a>
+        <li>
+          <a>Stories</a>
         </li>
-        <li className="nav-item">
-          <a href="/">Vacatures</a>
+        <li>
+          <a>Vacatures</a>
         </li>
-        <li className="nav-item">
-          <a href="/">Events</a>
+        <li>
+          <a>Events</a>
         </li>
-        <li className="nav-item">
-          <a href="/">Contact</a>
+        <li>
+          <a>Contact</a>
         </li>
       </ul>
     </StyledMenu>

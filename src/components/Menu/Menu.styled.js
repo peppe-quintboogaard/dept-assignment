@@ -4,17 +4,26 @@ export const StyledMenu = styled.nav`
   width: 100%;
   height: 100vh;
   position: absolute;
+  overflow: hidden;
   top: 0;
   left: 0;
   background: black;
   transition: all 0.25s linear;
   opacity: ${({ open }) => (open ? "1" : "0")};
-  .nav-list {
+  ul {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     padding: 5rem 1.25rem;
-    .nav-item {
+    opacity: ${({ open }) => (open ? "1" : "0")};
+    transform: ${({ open }) => (open ? "scale(1)" : "scale(1.05)")};
+    transition: all 0.25s linear;
+    &:hover li,
+    &:focus li {
+      opacity: 0.5;
+      transition: all 0.25s linear;
+    }
+    li {
       width: 100%;
       position: relative;
       margin-top: 0.5rem;
@@ -24,6 +33,11 @@ export const StyledMenu = styled.nav`
       text-align: right;
       text-transform: uppercase;
       line-height: 0.8;
+      &:hover,
+      &:focus {
+        opacity: 1;
+        transition: all 0.25s linear;
+      }
       a {
         display: inline-flex;
         align-items: center;
@@ -44,7 +58,7 @@ export const StyledMenu = styled.nav`
         }
       }
     }
-    .nav-item:not(:last-child) {
+    li:not(:last-child) {
       border-bottom: 1px solid rgba(163, 163, 163, 0.5);
     }
   }
