@@ -2,16 +2,20 @@ import React from "react";
 
 import "./index.css";
 
-const Filter = () => {
+const Filter = ({ setFilter }) => {
+  const filterValue = (e) => {
+    setFilter(e.target.value);
+  };
+
   return (
     <form className="cases-filter form">
       <label htmlFor="" className="form-label" id="filter">
         Show me
       </label>
-      <select className="form-select" name="options" id="filter">
-        <option value="all">all work</option>
-        <option value="other">Option 1</option>
-        <option value="nothing">Option 2</option>
+      <select onChange={filterValue} className="form-select" name="options" id="filter">
+        <option value="all">All work</option>
+        <option value="alphabetical-az">Alphabetical A-Z</option>
+        <option value="alphabetical-za">Alphabetical Z-A</option>
       </select>
     </form>
   );
