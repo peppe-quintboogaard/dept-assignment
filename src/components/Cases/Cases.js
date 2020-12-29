@@ -1,22 +1,22 @@
 import React from "react";
 import Filter from "../Filter";
-// filter
-import img from "./../../images/bolcom.png";
 
 import "./index.css";
 
-const Cases = () => {
-  // different function to filter elements
+const Cases = ({ data, setData }) => {
+  const cases = data.cases;
+  console.log(cases);
 
   return (
     <section className="cases">
       <Filter />
-      <article className="case">
-        <img src={img} alt="" className="case-img" />
-        <p className="case-title">bol.com</p>
-        <h2 className="case-caption">A summer island in the Netherlands</h2>
-        {/* <a className="case-link" href="">Disable on mobile</a> */}
-      </article>
+      {cases.map((item) => (
+        <article key={item.id} className="case">
+          <img className="case-img" src={item.img} alt="case" />
+          <p className="case-title">{item.company}</p>
+          <h2 className="case-caption">{item.caption}</h2>
+        </article>
+      ))}
     </section>
   );
 };

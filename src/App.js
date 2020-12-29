@@ -1,31 +1,22 @@
 import React, { useEffect, useState } from "react";
 import { Cases, Clients, Footer, Header } from "./components";
 
-const useFetch = (url) => {
-  const [data, setData] = useState(null);
+const App = () => {
+  const url = "./data";
+  const [data, setData] = useState();
 
   useEffect(() => {
-    fetch(url).then(async (res) => {
-      if (res.status !== 200) {
-        setData("Error");
-      }
-      const data = await res.json();
-      setData(data);
-    });
-  }, [setData, url]);
-
-  return [data];
-};
-
-const App = () => {
-  const [data] = useFetch("/data");
-  console.log(data);
+    fetch(url)
+      .then((res) => res.json())
+      .then((data) => setData(data));
+  }, []);
 
   return (
     <>
       <Header />
       <main className="container">
-        <Cases />
+        {data && <Cases data={data} />}
+
         <Clients />
       </main>
       <Footer />
