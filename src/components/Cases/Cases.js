@@ -3,30 +3,27 @@ import Filter from "../Filter";
 
 import "./index.css";
 
-const Cases = ({ data, setData }) => {
+const Cases = ({ data }) => {
   let cases = data.cases;
+
   const [filter, setFilter] = useState("all");
 
-  const filterHandler = () => {
-    console.log(filter);
-    switch (filter) {
-      case "all":
-        cases.sort();
-        break;
-      case "alphabetical-az":
-        cases.sort((a, b) => (a.company > b.company ? -1 : b.company > a.company ? 1 : 0));
-        break;
-      case "alphabetical-za":
-        cases.sort((a, b) => (a.company < b.company ? -1 : b.company < a.company ? 1 : 0));
-        break;
-      default:
-        cases = data.cases;
-        break;
+  function sortCases(cases) {
+    console.log(cases);
+    if (filter === "all") {
+      cases.sort((a, b) => (a.id < b.id ? -1 : b.id < a.id ? 1 : 0));
+      return cases;
+    } else if (filter === "alphabetical-az") {
+      cases.sort((a, b) => (a.company < b.company ? -1 : b.company < a.company ? 1 : 0));
+      return cases;
+    } else if (filter === "alphabetical-za") {
+      cases.sort((a, b) => (a.company > b.company ? -1 : b.company > a.company ? 1 : 0));
+      return cases;
     }
-  };
+  }
 
   useEffect(() => {
-    filterHandler();
+    sortCases(cases);
   }, [filter, setFilter]);
 
   return (

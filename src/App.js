@@ -4,7 +4,6 @@ import { Cases, Clients, Footer, Header } from "./components";
 const App = () => {
   const url = "./data";
   const [data, setData] = useState();
-
   useEffect(() => {
     fetch(url)
       .then((res) => res.json())
