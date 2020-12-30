@@ -11,6 +11,20 @@ export const StyledMenu = styled.nav`
   transition: all 0.25s linear;
   pointer-events: ${({ open }) => (open ? "auto" : "none")};
   opacity: ${({ open }) => (open ? "1" : "0")};
+  &::after {
+    display: none;
+    height: 1rem;
+    width: 100%;
+    content: "";
+    position: fixed;
+    bottom: 0rem;
+    z-index: 10;
+    background: white;
+    left: 0;
+    @media only screen and (min-width: 1025px) {
+      display: block;
+    }
+  }
   ul {
     display: flex;
     flex-direction: column;
