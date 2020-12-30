@@ -8,7 +8,7 @@ export const StyledMenu = styled.nav`
   top: 0;
   left: 0;
   background: black;
-  transition: all 0.25s linear;
+  transition: all 0.2s ease-in;
   pointer-events: ${({ open }) => (open ? "auto" : "none")};
   opacity: ${({ open }) => (open ? "1" : "0")};
   &::after {
@@ -32,11 +32,11 @@ export const StyledMenu = styled.nav`
     padding: 5rem 1.25rem;
     opacity: ${({ open }) => (open ? "1" : "0")};
     transform: ${({ open }) => (open ? "scale(1)" : "scale(1.05)")};
-    transition: all 0.25s linear;
+    transition: all 0.2s ease-in;
     &:hover li,
     &:focus li {
       opacity: 0.5;
-      transition: all 0.25s linear;
+      transition: all 0.2s ease-in;
     }
     @media only screen and (min-width: 850px) {
       padding: 5rem 3rem;
@@ -70,7 +70,7 @@ export const StyledMenu = styled.nav`
       &:hover,
       &:focus {
         opacity: 1;
-        transition: all 0.25s linear;
+        transition: all 0.2s ease-in;
       }
       p {
         display: inline-flex;
