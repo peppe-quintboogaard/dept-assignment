@@ -55,7 +55,12 @@ const Footer = () => {
       <p className="footer-text">VAT: NL 8552.47.502.B01</p>
       <p className="footer-text">Terms and conditions</p>
       <p className="footer-text">&#169; 2018 Dept Agency</p>
-      <button className="to-top-btn">top</button>
+      <a href="#header">
+        <button className="to-top-btn">
+          <span className="to-top--arrow"></span>
+          top
+        </button>
+      </a>
     </footer>
   );
 };

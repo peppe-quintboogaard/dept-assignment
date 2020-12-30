@@ -7,7 +7,7 @@ const Header = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="header">
+    <header className="header" id="header">
       <section className="header-menu">
         <Logo open={open} />
         <Burger open={open} setOpen={setOpen} />

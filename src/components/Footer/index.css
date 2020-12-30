@@ -81,7 +81,47 @@
   color: #1a18f7;
   background-color: white;
   font-family: "Teko", sans-serif;
+  font-weight: 400;
   text-transform: uppercase;
+  cursor: pointer;
+}
+
+.to-top-btn:hover .to-top--arrow {
+  transform: translateY(-5px);
+  transition: all 0.2s ease-in;
+}
+
+.to-top--arrow {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  margin-bottom: 0.5rem;
+  width: 20px;
+  height: 20px;
+  transition: all 0.2s ease-in;
+}
+
+.to-top--arrow::before {
+  position: absolute;
+  content: "";
+  display: inline-block;
+  background-color: #1a18f7;
+  width: 2px;
+  height: 20px;
+  /* transform: translateY(50px); */
+}
+
+.to-top--arrow::after {
+  position: absolute;
+  content: "";
+  display: inline-block;
+  color: #1a18f7;
+  width: 8px;
+  height: 8px;
+  border-top: 2px solid;
+  border-left: 2px solid;
+  transform: rotateZ(45deg);
 }
 
 @media only screen and (min-width: 850px) {
