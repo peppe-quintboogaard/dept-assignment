@@ -4,7 +4,7 @@ export const StyledMenu = styled.nav`
   width: 100%;
   height: 100vh;
   position: absolute;
-  overflow: hidden;
+  overflow: scroll;
   top: 0;
   left: 0;
   background: black;
@@ -24,6 +24,15 @@ export const StyledMenu = styled.nav`
       opacity: 0.5;
       transition: all 0.25s linear;
     }
+    @media only screen and (min-width: 850px) {
+      padding: 5rem 3rem;
+    }
+    @media only screen and (min-width: 1025px) {
+      padding: 7rem 5rem;
+    }
+    @media only screen and (min-width: 1200px) {
+      padding: 8rem 8rem;
+    }
     li {
       width: 100%;
       position: relative;
@@ -31,6 +40,19 @@ export const StyledMenu = styled.nav`
       text-align: right;
       text-transform: uppercase;
       line-height: 0.8;
+      cursor: pointer;
+      @media only screen and (min-width: 620px) {
+        line-height: 1;
+      }
+      @media only screen and (min-width: 850px) {
+        line-height: 1.1;
+      }
+      @media only screen and (min-width: 1025px) {
+        line-height: 1.2;
+      }
+      @media only screen and (min-width: 1200px) {
+        line-height: 1.3;
+      }
       &:hover,
       &:focus {
         opacity: 1;
@@ -42,6 +64,18 @@ export const StyledMenu = styled.nav`
         font-family: "Teko", sans-serif;
         font-size: 2.5rem;
         align-items: center;
+        @media only screen and (min-width: 620px) {
+          font-size: 3rem;
+        }
+        @media only screen and (min-width: 850px) {
+          font-size: 3.5rem;
+        }
+        @media only screen and (min-width: 1025px) {
+          font-size: 4rem;
+        }
+        @media only screen and (min-width: 1200px) {
+          font-size: 5rem;
+        }
         &::after {
           content: "";
           position: absolute;

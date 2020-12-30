@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  position: relative;
   padding: 3.5rem 1.25rem 1rem;
   color: white;
   background-color: black;
@@ -23,6 +24,10 @@
   flex-direction: column;
   align-items: flex-end;
   width: 50%;
+}
+
+.link-item:first-child {
+  display: none;
 }
 
 .link-item p {
@@ -52,7 +57,7 @@
   background-color: #3e3e3e;
 }
 
-.footer p {
+.footer-text {
   color: #808080;
   font-size: 0.8rem;
   width: 100%;
@@ -64,4 +69,103 @@
 
 .footer-text:last-child {
   margin: 2rem 0;
+}
+
+.to-top-btn {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 4rem;
+  height: 100%;
+  color: #1a18f7;
+  background-color: white;
+  font-family: "Teko", sans-serif;
+  text-transform: uppercase;
+}
+
+@media only screen and (min-width: 850px) {
+  .footer {
+    padding: 3.5rem 3rem 2.5rem;
+  }
+
+  .footer-links {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 75%;
+  }
+
+  .footer-media {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 15%;
+    margin-left: auto;
+  }
+
+  .footer-text {
+    width: 25%;
+    margin-bottom: 2rem;
+  }
+
+  .footer-text:last-of-type {
+    margin-left: auto;
+    text-align: right;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .footer {
+    padding: 3.5rem 5rem 2.5rem;
+  }
+
+  .footer-links {
+    max-width: 40rem;
+  }
+
+  .footer-media {
+    max-width: 10rem;
+  }
+
+  .link-item:first-child {
+    display: block;
+    margin-right: 10%;
+    line-height: 2.25;
+  }
+
+  .link-item:first-child img {
+    width: 5rem;
+    margin: auto 0;
+  }
+
+  .link-item p {
+    font-size: 1.25rem;
+  }
+
+  .media-item {
+    height: 1.25rem;
+    width: 1.25rem;
+  }
+
+  .footer-text {
+    width: 20%;
+  }
+
+  .to-top-btn {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .footer {
+    padding: 3.5rem 8rem 2.5rem;
+  }
+
+  .link-item:first-child {
+    margin-right: 20%;
+  }
+
+  .to-top-btn {
+    width: 5rem;
+  }
 }

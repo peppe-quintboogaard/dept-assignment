@@ -13,9 +13,15 @@ const Filter = ({ setFilter }) => {
         Show me
       </label>
       <select onChange={filterValue} className="form-select" name="options" id="filter">
-        <option value="all">All work</option>
-        <option value="alphabetical-az">Alphabetical A-Z</option>
-        <option value="alphabetical-za">Alphabetical Z-A</option>
+        <option className="form-option" value="all">
+          All work
+        </option>
+        <option className="form-option" value="alphabetical-az">
+          Alphabetical A-Z
+        </option>
+        <option className="form-option" value="alphabetical-za">
+          Alphabetical Z-A
+        </option>
       </select>
     </form>
   );

@@ -1,4 +1,8 @@
 .cases {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  flex-wrap: wrap;
   padding: 0 1.25rem 1.25rem;
 }
 
@@ -7,6 +11,7 @@
   flex-direction: column;
   align-items: flex-start;
   margin-bottom: 3.5rem;
+  width: 100%;
 }
 
 .case-img {
@@ -27,6 +32,98 @@
   line-height: 1.1;
 }
 
+.case-link {
+  position: relative;
+  display: none;
+  margin-top: 1.5rem;
+  padding-left: 1rem;
+  color: #1a18f7;
+  font-size: 0.9rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.case-link::after {
+  content: "";
+  position: absolute;
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-left: 6px solid #1a18f7;
+  top: 2px;
+  left: 0;
+  transition: all 0.25s linear;
+}
+
+.case-link:hover::after {
+  left: 3px;
+  transition: all 0.25s linear;
+}
+
 .case-caption::first-letter {
   text-transform: uppercase;
+}
+
+@media only screen and (min-width: 620px) {
+  .cases {
+    justify-content: space-between;
+  }
+
+  .case {
+    width: 45%;
+    overflow: hidden;
+  }
+
+  .case-img {
+    min-width: 17.5rem;
+    width: 100%;
+    height: auto;
+  }
+
+  .case-title {
+    font-size: 0.8rem;
+  }
+
+  .case-caption {
+    font-size: 2rem;
+  }
+
+  .case-link {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 850px) {
+  .cases {
+    padding: 0 3rem 3rem;
+  }
+
+  .case-img {
+    max-width: 30rem;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .cases {
+    padding: 0 5rem 5rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .cases {
+    margin: 0 auto;
+    padding: 0 8rem 8rem;
+    max-width: 80rem;
+  }
+}
+
+@media only screen and (min-width: 1480px) {
+  .cases {
+    max-width: 120rem;
+  }
+
+  .case {
+    width: 30%;
+  }
 }

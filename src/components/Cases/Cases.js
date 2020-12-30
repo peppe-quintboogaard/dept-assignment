@@ -37,6 +37,7 @@ const Cases = ({ data, setData }) => {
           <img className="case-img" src={item.img} alt="case" />
           <p className="case-title">{item.company}</p>
           <h2 className="case-caption">{item.caption}</h2>
+          <p className="case-link">view case</p>
         </article>
       ))}
     </section>

@@ -10,3 +10,31 @@
   font-size: 0.9rem;
   text-transform: uppercase;
 }
+
+@media only screen and (min-width: 850px) {
+  .header-cta {
+    position: absolute;
+    bottom: 3rem;
+    right: 2rem;
+  }
+
+  .header-cta button {
+    padding: 1rem 3rem;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .header-cta {
+    bottom: 5rem;
+    right: 4rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .header-cta {
+    right: 7rem;
+  }
+}
+
+@media only screen and (min-width: 1480px) {
+}

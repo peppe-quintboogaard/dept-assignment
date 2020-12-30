@@ -12,6 +12,9 @@ const Footer = () => {
       <img src={DeptLogoWhite} alt="Logo DEPT white" className="footer-logo" />
       <ul className="footer-links">
         <li className="link-item">
+          <img src={DeptLogoWhite} alt="Logo DEPT" />
+        </li>
+        <li className="link-item">
           <p>Work</p>
         </li>
         <li className="link-item">
@@ -52,6 +55,7 @@ const Footer = () => {
       <p className="footer-text">VAT: NL 8552.47.502.B01</p>
       <p className="footer-text">Terms and conditions</p>
       <p className="footer-text">&#169; 2018 Dept Agency</p>
+      <button className="to-top-btn">top</button>
     </footer>
   );
 };
