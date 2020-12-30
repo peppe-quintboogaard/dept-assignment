@@ -104,10 +104,6 @@
   .cases {
     padding: 0 3rem 3rem;
   }
-
-  .case-img {
-    max-width: 30rem;
-  }
 }
 
 @media only screen and (min-width: 995px) {
