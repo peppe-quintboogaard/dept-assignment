@@ -65,7 +65,7 @@ export const StyledMenu = styled.nav`
         line-height: 1.2;
       }
       @media only screen and (min-width: 1200px) {
-        line-height: 1.3;
+        line-height: 1.25;
       }
       &:hover,
       &:focus {

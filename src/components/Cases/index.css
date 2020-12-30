@@ -43,7 +43,7 @@
 .case-link {
   position: relative;
   display: none;
-  margin-top: 1.5rem;
+  margin-top: auto;
   padding-left: 1rem;
   color: #1a18f7;
   font-size: 0.9rem;
@@ -80,14 +80,9 @@
   }
 
   .case {
+    /* height: 30rem; */
     width: 45%;
     overflow: hidden;
-  }
-
-  .case-img {
-    min-width: 17.5rem;
-    width: 100%;
-    height: auto;
   }
 
   .case-title {
@@ -96,9 +91,11 @@
 
   .case-caption {
     font-size: 2rem;
+    height: 2rem;
   }
 
   .case-link {
+    margin-top: 3rem;
     display: block;
   }
 }
@@ -110,6 +107,12 @@
 
   .case-img {
     max-width: 30rem;
+  }
+}
+
+@media only screen and (min-width: 995px) {
+  .case-link {
+    margin-top: 1.5rem;
   }
 }
 
@@ -134,5 +137,15 @@
 
   .case {
     width: 30%;
+  }
+
+  .case-link {
+    margin-top: 3rem;
+  }
+}
+
+@media only screen and (min-width: 1605px) {
+  .case-link {
+    margin-top: 1.5rem;
   }
 }
