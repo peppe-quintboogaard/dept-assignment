@@ -13,7 +13,7 @@ const App = () => {
   return (
     <>
       <Header />
-      <main className="container">
+      <main className="container" id="container">
         {data && <Cases data={data} />}
         {data && <Clients data={data} />}
       </main>

@@ -5,7 +5,9 @@ import "./index.css";
 const CTA = () => {
   return (
     <section className="header-cta">
-      <button>view case</button>
+      <a href="#container">
+        <button>view case</button>
+      </a>
     </section>
   );
 };
